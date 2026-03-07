@@ -1,26 +1,26 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import Link from "next/link"
-import { Menu, X } from "lucide-react"
-import { cn } from "@/lib/utils"
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import { Menu, X, Zap } from "lucide-react";
+import { cn } from "@/lib/utils";
+import { MessageCircle } from "lucide-react";
 
 export function Navbar() {
-  const [isOpen, setIsOpen] = useState(false)
-  const [scrolled, setScrolled] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 20)
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+    const handleScroll = () => setScrolled(window.scrollY > 20);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const navLinks = [
     { href: "#servicios", label: "Servicios" },
     { href: "#planes", label: "Planes" },
     { href: "#nosotros", label: "Nosotros" },
-    { href: "#faq", label: "FAQ" },
-  ]
+  ];
 
   return (
     <header
@@ -34,17 +34,30 @@ export function Navbar() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group">
-            <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-sm font-sans">Z</span>
+          <Link href="/" className="flex items-center group">
+            <div
+              className={cn(
+                "inline-flex items-center gap-2 px-3 py-1.5 rounded-full backdrop-blur transition-all duration-300",
+                scrolled
+                  ? "border-primary/30 bg-primary/10 text-foreground"
+                  : "border-white/20 bg-white/10 text-white"
+              )}
+            >
+              <Zap
+                className={cn(
+                  "w-4 h-4",
+                  scrolled ? "text-primary" : "text-white"
+                )}
+              />
+
+              <span className="text-sm font-semibold tracking-wide">
+                Zona <span className="text-primary">Web</span>
+              </span>
             </div>
-            <span className="font-bold text-xl text-foreground tracking-tight">
-              Zona<span className="text-primary">Web</span>
-            </span>
           </Link>
 
           {/* Desktop Links */}
-          <div className="hidden md:flex items-center gap-8">
+          {/* <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -54,16 +67,43 @@ export function Navbar() {
                 {link.label}
               </Link>
             ))}
+          </div> */}
+          <div className="hidden md:flex items-center gap-8">
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={cn(
+                  "text-sm font-medium transition-colors",
+                  scrolled
+                    ? "text-muted-foreground hover:text-foreground"
+                    : "text-white/90 hover:text-white"
+                )}
+              >
+                {link.label}
+              </Link>
+            ))}
           </div>
 
           {/* CTA */}
-          <div className="hidden md:flex items-center gap-3">
+          {/* <div className="hidden md:flex items-center gap-3">
             <Link
               href="/cotizador"
               className="px-4 py-2 text-sm font-semibold rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
             >
               Cotizar proyecto
             </Link>
+          </div> */}
+          <div className="hidden md:flex items-center gap-3">
+            <a
+              href="https://wa.me/5492284656640"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-4 py-2 text-sm font-semibold rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
+            >
+              <MessageCircle className="w-4 h-4" />
+              <span>Contactar</span>
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -90,19 +130,22 @@ export function Navbar() {
                   {link.label}
                 </Link>
               ))}
-              <div className="px-4 pt-2">
-                <Link
-                  href="/cotizador"
-                  onClick={() => setIsOpen(false)}
-                  className="block w-full text-center px-4 py-2.5 text-sm font-semibold rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
-                >
-                  Cotizar proyecto
-                </Link>
-              </div>
+           <div className="px-4 pt-3">
+        <a
+          href="https://wa.me/5492284656640"
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={() => setIsOpen(false)}
+          className="flex items-center justify-center gap-2 w-full px-4 py-3 text-sm font-semibold rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
+        >
+          <MessageCircle className="w-4 h-4" />
+          Contactar
+        </a>
+      </div>
             </div>
           </div>
         )}
       </nav>
     </header>
-  )
+  );
 }

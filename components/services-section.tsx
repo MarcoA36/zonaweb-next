@@ -1,103 +1,128 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import Image from "next/image"
-import { ArrowRight } from "lucide-react"
+import Link from "next/link";
+import Image from "next/image";
 
 const services = [
   {
-    title: "Sitios Web Profesionales",
+    title: "Sitios Web",
     description:
       "Diseñamos páginas web modernas, rápidas y optimizadas para Google. Ideales para inmobiliarias, hoteles y pymes que quieren generar más consultas y mejorar su presencia online.",
-    features: ["Diseño responsive", "SEO optimizado", "Velocidad de carga alta", "Panel administrable"],
-    href: "/cotizador",
+    href: "/webs",
     image: "/card-1b.png",
-    imageAlt: "Sitios Web Profesionales",
+       features: [
+      "Sitios institucionales para empresas",
+      "Landing pages para campañas o servicios",
+      "Tiendas online para vender productos",
+    ],
   },
   {
     title: "Sistemas de Gestión",
     description:
       "Mejoramos procesos internos con sistemas hechos a medida: administración de clientes, control de propiedades, reservas, facturación y más.",
-    features: ["Desarrollo a medida", "Integración de APIs", "Automatización", "Reportes y analytics"],
     href: "/cotizador?servicio=sistema#cotizador",
     image: "/images/card-2b.png",
-    imageAlt: "Sistemas de Gestión",
+       features: [
+      "Sitios institucionales para empresas",
+      "Landing pages para campañas o servicios",
+      "Tiendas online para vender productos",
+    ],
   },
   {
     title: "Aplicaciones Móviles",
     description:
       "Desarrollamos apps móviles que conectan tu negocio con tus clientes en cualquier momento y lugar, mejorando la comunicación y la experiencia digital.",
-    features: ["iOS y Android", "UI/UX intuitivo", "Notificaciones push", "Integración con backend"],
     href: "/cotizador?servicio=app#cotizador",
     image: "/images/card-3b.png",
-    imageAlt: "Aplicaciones Móviles",
+       features: [
+      "Sitios institucionales para empresas",
+      "Landing pages para campañas o servicios",
+      "Tiendas online para vender productos",
+    ],
   },
-]
-
+];
 export function ServicesSection() {
   return (
-    <section id="servicios" className="py-24 px-4 sm:px-6 lg:px-8 bg-background">
-      <div className="max-w-7xl mx-auto">
-        {/* Header */}
-        <div className="text-center mb-16">
-          <p className="text-sm font-semibold uppercase tracking-widest text-primary mb-3">
-            Nuestros Servicios
-          </p>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground text-balance mb-4">
-            Todo lo que tu negocio necesita
-          </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto text-pretty">
-            Desde una presencia digital profesional hasta sistemas de gestión complejos. Siempre con el mejor diseño y tecnología.
-          </p>
-        </div>
+    <section id="servicios" className="py-16 md:py-20 lg:py-28 bg-white">
+      <div className="text-center mb-16">
+        <p className="text-sm font-semibold uppercase tracking-widest text-primary mb-3">
+          Servicios
+        </p>
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground text-balance mb-4">
+          Cómo podemos ayudarte
+        </h2>
+      </div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16 md:space-y-20 lg:space-y-28">
+        {services.map((service, index) => {
+          const isReversed = index % 2 !== 0;
+          const message = encodeURIComponent(
+            `Hola, estaba viendo la página y quisiera más información sobre ${service.title}`
+          );
 
-        {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {services.map((service) => (
+          const whatsappUrl = `https://wa.me/5492284656640?text=${message}`;
+          return (
             <div
               key={service.title}
-              className="group relative bg-card rounded-2xl border border-border flex flex-col hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden"
+              className={`grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center`}
             >
               {/* Image */}
-              <div className="relative w-full aspect-[4/3] bg-secondary overflow-hidden">
-                <Image
-                  src={service.image}
-                  alt={service.imageAlt}
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                  onError={() => {}}
-                />
+              <div className={`relative ${isReversed ? "lg:order-2" : ""}`}>
+                <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 to-transparent rounded-3xl blur-2xl scale-110" />
+                <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-200 bg-white">
+                  <Image
+                    src={service.image}
+                    alt={service.title}
+                    width={900}
+                    height={600}
+                    className="w-full h-auto transition-transform duration-500 hover:scale-[1.03]"
+                  />
+                </div>
               </div>
 
               {/* Content */}
-              <div className="p-8 flex flex-col flex-1">
-                <h3 className="text-xl font-bold text-foreground mb-3">{service.title}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed mb-6 flex-1">
+              <div className={`${isReversed ? "lg:order-1" : ""}`}>
+                <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-5">
+                  {service.title}
+                </h2>
+
+                <p className="text-lg text-slate-600 leading-relaxed">
                   {service.description}
                 </p>
+                 <div className="my-4">
+    {/* <p className="font-semibold text-slate-900 mb-2">
+      Como te podemos ayudar:
+    </p> */}
 
-                {/* Features */}
-                <ul className="space-y-2 mb-8">
-                  {service.features.map((feature) => (
-                    <li key={feature} className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <div className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
+    <ul className="space-y-1 text-slate-600">
+      {service.features?.map((item) => (
+        <li key={item}>✔ {item}</li>
+      ))}
+    </ul>
+  </div>
 
-                <Link
-                  href={service.href}
-                  className="flex items-center gap-2 text-sm font-semibold text-primary group-hover:gap-3 transition-all"
-                >
-                  Ver precios
-                  <ArrowRight className="w-4 h-4" />
-                </Link>
+
+                <div className="flex flex-wrap gap-3">
+  <Link
+    href={service.href}
+    className="inline-block px-6 py-3 rounded-xl bg-primary text-white font-semibold hover:bg-primary/90 transition-all shadow-md"
+  >
+    Ver precios
+  </Link>
+
+  <a
+    href={whatsappUrl}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-block px-6 py-3 rounded-xl border border-slate-300 text-slate-700 font-semibold hover:bg-slate-100 transition-all"
+  >
+    Consultar
+  </a>
+</div>
               </div>
             </div>
-          ))}
-        </div>
+          );
+        })}
       </div>
     </section>
-  )
+  );
 }

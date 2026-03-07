@@ -5,29 +5,34 @@ import { Plus, Minus } from "lucide-react"
 
 const faqs = [
   {
-    question: "¿Cuánto tiempo tarda el desarrollo de un sitio web?",
+    question: "¿Qué incluye el desarrollo del sitio web?",
     answer:
-      "El tiempo varía según la complejidad del proyecto. Un sitio institucional básico puede estar listo en 1-3 días, mientras que proyectos más complejos con sistemas de gestión pueden requerir semanas.",
+      "El desarrollo incluye diseño personalizado, adaptación para celulares, optimización básica para Google, configuración inicial y publicación online. Dependiendo del plan también puede incluir formulario de contacto, integración con WhatsApp y panel de administración.",
   },
   {
-    question: "¿Qué es el hosting?",
+    question: "¿Tengo que pagar hosting y dominio?",
     answer:
-      "Es el servicio donde se aloja tu página web para que esté disponible en internet las 24 horas del día, los 365 días del año.",
+      "Sí. El dominio es el nombre de tu sitio (por ejemplo: tunegocio.com) y el hosting es el servicio donde se aloja la web para que esté disponible en internet. Podemos ayudarte a configurarlo o gestionarlo por vos.",
   },
   {
-    question: "¿Qué es el dominio?",
+    question: "¿Puedo pedir cambios después de que el sitio esté terminado?",
     answer:
-      "Es el nombre de tu sitio web (por ejemplo: tunegocio.com). Es lo que las personas escriben en el navegador para encontrarte.",
+      "Sí. Durante el desarrollo podés solicitar ajustes y modificaciones. Una vez entregado el sitio también ofrecemos soporte y mantenimiento para realizar cambios cuando lo necesites.",
   },
   {
-    question: "¿Cuánto se paga después del primer año?",
+    question: "¿El sitio funciona bien en celulares?",
     answer:
-      "Luego del primer año, el costo depende del proveedor elegido. Podés renovar con nosotros o contratar planes de hosting compartido en Hostinger, DonWeb, etc.",
+      "Sí. Todos los sitios que desarrollamos son responsive, lo que significa que se adaptan automáticamente a celulares, tablets y computadoras.",
   },
   {
-    question: "¿Ofrecen soporte después de entregado el proyecto?",
+    question: "¿Mi sitio va a aparecer en Google?",
     answer:
-      "Sí, ofrecemos planes de mantenimiento y soporte mensual. También podés contratar horas de soporte puntual según tus necesidades.",
+      "Sí. El sitio se entrega optimizado para que los buscadores puedan indexarlo correctamente. Además, si lo necesitás, podemos trabajar estrategias de posicionamiento SEO.",
+  },
+  {
+    question: "¿Ofrecen mantenimiento del sitio?",
+    answer:
+      "Sí. Ofrecemos planes de mantenimiento que incluyen actualizaciones, mejoras, soporte técnico y monitoreo para que tu sitio funcione correctamente todo el tiempo.",
   },
 ]
 
@@ -39,7 +44,7 @@ export function FaqSection() {
       <div className="max-w-3xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <p className="text-sm font-semibold uppercase tracking-widest text-primary mb-3">FAQ</p>
+          {/* <p className="text-sm font-semibold uppercase tracking-widest text-primary mb-3">FAQ</p> */}
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground text-balance mb-4">
             Preguntas frecuentes
           </h2>

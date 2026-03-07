@@ -43,6 +43,7 @@ import { Analytics } from "@vercel/analytics/next"
 import { Footer } from "@/components/footer"
 import "./globals.css"
 
+
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
 const geistMono = Geist_Mono({ subsets: ["latin"], variable: "--font-geist-mono" })
 
