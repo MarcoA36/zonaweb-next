@@ -22,12 +22,6 @@ export default function SiteLayout({
           </Link>
 
           <div className="flex items-center gap-2">
-            <div className="w-7 h-7 rounded-lg bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-xs">
-                Z
-              </span>
-            </div>
-
             <span className="font-bold text-base text-foreground tracking-tight">
               Zona<span className="text-primary">Web</span>
             </span>

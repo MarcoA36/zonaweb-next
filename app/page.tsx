@@ -6,6 +6,7 @@ import { FaqSection } from "@/components/faq-section";
 import { Footer } from "@/components/footer";
 import { PlansSection } from "@/components/plans-section";
 import { SolutionsSection } from "@/components/industry-section";
+import { AboutSection } from "@/components/about-section";
 
 export default function HomePage() {
   return (
@@ -17,6 +18,7 @@ export default function HomePage() {
         {/* <SolutionsSection/> */}
         {/* <PlansSection /> */}
         <BenefitsSection />
+        {/* <AboutSection/> */}
         <FaqSection />
       </main>
       {/* <Footer /> */}

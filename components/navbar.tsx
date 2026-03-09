@@ -43,15 +43,10 @@ export function Navbar() {
                   : "border-white/20 bg-white/10 text-white"
               )}
             >
-              <Zap
-                className={cn(
-                  "w-4 h-4",
-                  scrolled ? "text-primary" : "text-white"
-                )}
-              />
+            
 
-              <span className="text-sm font-semibold tracking-wide">
-                Zona <span className="text-primary">Web</span>
+              <span className="font-semibold tracking-wide">
+                Zona<span className="text-primary">Web</span>
               </span>
             </div>
           </Link>

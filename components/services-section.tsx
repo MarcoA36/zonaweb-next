@@ -8,12 +8,14 @@ const services = [
     title: "Sitios Web",
     description:
       "Diseñamos páginas web modernas, rápidas y optimizadas para Google. Ideales para inmobiliarias, hoteles y pymes que quieren generar más consultas y mejorar su presencia online.",
-    href: "/webs",
+     href: "/cotizador?servicio=web#cotizador",
     image: "/card-1b.png",
-       features: [
-      "Sitios institucionales para empresas",
-      "Landing pages para campañas o servicios",
-      "Tiendas online para vender productos",
+    features: [
+      "Diseño moderno adaptado a celulares y tablets",
+      "Optimización para aparecer en Google (SEO básico)",
+      "Panel para administrar contenido fácilmente",
+      "Integración con WhatsApp, formularios y redes sociales",
+      "Alta velocidad de carga y seguridad",
     ],
   },
   {
@@ -22,10 +24,11 @@ const services = [
       "Mejoramos procesos internos con sistemas hechos a medida: administración de clientes, control de propiedades, reservas, facturación y más.",
     href: "/cotizador?servicio=sistema#cotizador",
     image: "/images/card-2b.png",
-       features: [
-      "Sitios institucionales para empresas",
-      "Landing pages para campañas o servicios",
-      "Tiendas online para vender productos",
+    features: [
+      "Sistema personalizado según las necesidades del negocio",
+      "Gestión de clientes, productos o servicios",
+      "Automatización de procesos y tareas repetitivas",
+      "Reportes y estadísticas para tomar decisiones",
     ],
   },
   {
@@ -34,10 +37,11 @@ const services = [
       "Desarrollamos apps móviles que conectan tu negocio con tus clientes en cualquier momento y lugar, mejorando la comunicación y la experiencia digital.",
     href: "/cotizador?servicio=app#cotizador",
     image: "/images/card-3b.png",
-       features: [
-      "Sitios institucionales para empresas",
-      "Landing pages para campañas o servicios",
-      "Tiendas online para vender productos",
+    features: [
+      "Aplicaciones para Android e iOS",
+      "Conexión directa con clientes mediante notificaciones",
+      "Integración con sistemas o plataformas existentes",
+      "Interfaz intuitiva y fácil de usar",
     ],
   },
 ];
@@ -88,36 +92,35 @@ export function ServicesSection() {
                 <p className="text-lg text-slate-600 leading-relaxed">
                   {service.description}
                 </p>
-                 <div className="my-4">
-    {/* <p className="font-semibold text-slate-900 mb-2">
+                <div className="my-4">
+                  {/* <p className="font-semibold text-slate-900 mb-2">
       Como te podemos ayudar:
     </p> */}
 
-    <ul className="space-y-1 text-slate-600">
-      {service.features?.map((item) => (
-        <li key={item}>✔ {item}</li>
-      ))}
-    </ul>
-  </div>
-
+                  <ul className="space-y-1 text-slate-600">
+                    {service.features?.map((item) => (
+                      <li key={item}>✔ {item}</li>
+                    ))}
+                  </ul>
+                </div>
 
                 <div className="flex flex-wrap gap-3">
-  <Link
-    href={service.href}
-    className="inline-block px-6 py-3 rounded-xl bg-primary text-white font-semibold hover:bg-primary/90 transition-all shadow-md"
-  >
-    Ver precios
-  </Link>
+                  <Link
+                    href={service.href}
+                    className="inline-block px-6 py-3 rounded-xl bg-primary text-white font-semibold hover:bg-primary/90 transition-all shadow-md"
+                  >
+                    Ver precios
+                  </Link>
 
-  <a
-    href={whatsappUrl}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="inline-block px-6 py-3 rounded-xl border border-slate-300 text-slate-700 font-semibold hover:bg-slate-100 transition-all"
-  >
-    Consultar
-  </a>
-</div>
+                  <a
+                    href={whatsappUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block px-6 py-3 rounded-xl border border-slate-300 text-slate-700 font-semibold hover:bg-slate-100 transition-all"
+                  >
+                    Consultar
+                  </a>
+                </div>
               </div>
             </div>
           );

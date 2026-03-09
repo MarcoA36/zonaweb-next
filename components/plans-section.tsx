@@ -12,7 +12,7 @@ const plans = [
       "Optimización SEO básica",
       "Formulario de contacto",
     ],
-    cta: "Quiero este plan",
+    cta: "Me interesa",
     featured: false,
   },
   {
@@ -25,7 +25,7 @@ const plans = [
       "Panel de administración",
       "Integraciones personalizadas",
     ],
-    cta: "Quiero este plan",
+    cta: "Me interesa",
     featured: true,
   },
   {
@@ -37,9 +37,8 @@ const plans = [
       "Sistema de gestión a medida",
       "Aplicación móvil personalizada",
       "Automatización de procesos",
-      "Soporte y mejoras continuas",
     ],
-    cta: "Quiero este plan",
+    cta: "Me interesa",
     featured: false,
   },
 ]
