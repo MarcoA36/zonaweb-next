@@ -7,6 +7,7 @@ import { Footer } from "@/components/footer";
 import { PlansSection } from "@/components/plans-section";
 import { SolutionsSection } from "@/components/industry-section";
 import { AboutSection } from "@/components/about-section";
+import { EscalableSection } from "@/components/escalable-section";
 
 export default function HomePage() {
   return (
@@ -17,6 +18,7 @@ export default function HomePage() {
         <ServicesSection />
         {/* <SolutionsSection/> */}
         {/* <PlansSection /> */}
+        <EscalableSection/>
         <BenefitsSection />
         {/* <AboutSection/> */}
         <FaqSection />

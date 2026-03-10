@@ -37,15 +37,15 @@ export function Navbar() {
           <Link href="/" className="flex items-center group">
             <div
               className={cn(
-                "inline-flex items-center gap-2 px-3 py-1.5 rounded-full backdrop-blur transition-all duration-300",
+                "inline-flex items-center gap-2 px-3 py-1.5 rounded-full  transition-all duration-300",
                 scrolled
-                  ? "border-primary/30 bg-primary/10 text-foreground"
-                  : "border-white/20 bg-white/10 text-white"
+                  ? "border-primary/30  text-foreground"
+                  : "border-white/20  text-white"
               )}
             >
             
 
-              <span className="font-semibold tracking-wide">
+              <span className="font-semibold tracking-wide text-lg">
                 Zona<span className="text-primary">Web</span>
               </span>
             </div>

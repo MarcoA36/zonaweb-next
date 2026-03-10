@@ -7,55 +7,79 @@ export const BASE_PRICES: Record<ServiceId, number> = {
 }
 
 export const STEPS_BY_SERVICE: Record<ServiceId, Step[]> = {
-  web: [
-    {
-      id: "tipo",
-      question: "¿Qué tipo de sitio necesitás?",
-      hint: "Elegí el que mejor describe tu proyecto",
-      options: [
-        { label: "Sitio institucional", description: "Presentación de tu empresa o servicio", price: 0, value: "institucional" },
-        { label: "Landing page", description: "Página de captación de clientes", price: -30000, value: "landing" },
-        { label: "Tienda online", description: "Venta de productos o servicios", price: 120000, value: "ecommerce" },
-        { label: "Portal / Directorio", description: "Listados, inmobiliaria, etc.", price: 90000, value: "portal" },
-      ],
-    },
-    {
-      id: "panel",
-      question: "¿Necesitás panel para gestionar el contenido?",
-      options: [
-        { label: "No necesito", description: "El contenido no cambia seguido", price: 0, value: "no" },
-        { label: "Edición básica", description: "Textos e imágenes simples", price: 40000, value: "basico" },
-        { label: "Gestión completa", description: "Productos, entradas, formularios", price: 90000, value: "completo" },
-      ],
-    },
-    {
-      id: "seo",
-      question: "¿Qué nivel de SEO necesitás?",
-      options: [
-        { label: "SEO básico", description: "Metadatos y estructura base", price: 0, value: "basico" },
-        { label: "SEO avanzado", description: "Optimización completa + velocidad", price: 50000, value: "avanzado" },
-        { label: "Sin SEO por ahora", price: -20000, value: "ninguno" },
-      ],
-    },
-    {
-      id: "identidad",
-      question: "¿Cómo está tu identidad visual?",
-      options: [
-        { label: "Tengo logo y marca", description: "Solo necesito aplicar mi branding", price: 0, value: "completa" },
-        { label: "Tengo logo pero necesita mejoras", price: 30000, value: "parcial" },
-        { label: "No tengo identidad visual", description: "Necesito diseño desde cero", price: 80000, value: "ninguna" },
-      ],
-    },
-    {
-      id: "contenido",
-      question: "¿Cómo está tu contenido?",
-      options: [
-        { label: "Tengo textos listos", description: "Solo necesito publicarlos", price: 0, value: "listo" },
-        { label: "Necesito asesoramiento", price: 25000, value: "asesoramiento" },
-        { label: "Necesito redacción completa", description: "Copywriting + estructura", price: 60000, value: "completo" },
-      ],
-    },
+web: [
+{
+  id: "tipo",
+  question: "¿Qué tipo de sitio necesitás?",
+  hint: "Elegí el que mejor describe tu proyecto",
+  options: [
+    { label: "Landing page", description: "Una página enfocada en captar clientes", price: 80000, value: "landing" },
+    { label: "Sitio institucional", description: "Presentación de empresa o servicio", price: 120000, value: "institucional" },
+    { label: "Catálogo de productos", description: "Mostrar productos sin venta online", price: 160000, value: "catalogo" },
+    { label: "Tienda online", description: "Venta con carrito y pagos", price: 220000, value: "ecommerce" },
   ],
+},
+
+{
+  id: "contenido",
+  question: "¿Cuántas secciones o páginas tendrá el sitio?",
+  options: [
+    { label: "1 a 3 secciones", price: 0, value: "simple" },
+    { label: "4 a 8 secciones", price: 30000, value: "medio" },
+    { label: "Más de 8 secciones", price: 60000, value: "grande" },
+  ],
+},
+
+{
+  id: "panel",
+  question: "¿Necesitás administrar el contenido?",
+  options: [
+    { label: "No", description: "Contenido fijo", price: 0, value: "no" },
+    { label: "Sí, edición básica", description: "Editar textos e imágenes", price: 40000, value: "basico" },
+    { label: "Administración completa", description: "Productos, páginas y contenido", price: 80000, value: "completo" },
+  ],
+},
+
+{
+  id: "funciones",
+  question: "¿Necesitás funcionalidades especiales?",
+  options: [
+    { label: "Formulario de contacto", price: 0, value: "form" },
+    { label: "Integración WhatsApp", price: 10000, value: "whatsapp" },
+    { label: "Blog o noticias", price: 30000, value: "blog" },
+    { label: "Área privada de usuarios", price: 90000, value: "usuarios" },
+  ],
+},
+
+{
+  id: "diseno",
+  question: "¿Cómo está tu identidad visual?",
+  options: [
+    { label: "Tengo logo y marca", price: 0, value: "completa" },
+    { label: "Tengo logo pero necesita mejoras", price: 30000, value: "mejoras" },
+    { label: "Necesito identidad visual completa", price: 80000, value: "branding" },
+  ],
+},
+
+{
+  id: "contenido_texto",
+  question: "¿Tenés el contenido listo?",
+  options: [
+    { label: "Sí, tengo textos e imágenes", price: 0, value: "listo" },
+    { label: "Necesito asesoramiento", price: 25000, value: "asesoria" },
+    { label: "Necesito redacción completa", price: 60000, value: "copywriting" },
+  ],
+},
+
+{
+  id: "seo",
+  question: "¿Querés optimización SEO?",
+  options: [
+    { label: "SEO básico", price: 0, value: "basico" },
+    { label: "SEO avanzado", price: 50000, value: "avanzado" },
+  ],
+},
+],
   sistema: [
     {
       id: "tipo",
