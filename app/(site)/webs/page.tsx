@@ -1,3 +1,4 @@
+import { PlansSection } from "@/components/plans-section"
 import type { Metadata } from "next"
 import Link from "next/link"
 
@@ -9,91 +10,82 @@ export const metadata: Metadata = {
 
 export default function WebsPage() {
   return (
-    <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+    <>
+    <PlansSection/>
+   <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
 
-      {/* Hero */}
-      <div className="max-w-2xl mb-16">
-        <h1 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-          Desarrollo de páginas web profesionales
-        </h1>
+  {/* Hero */}
+  <div className="max-w-2xl mb-16">
+    <h1 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
+      Desarrollo de páginas web profesionales
+    </h1>
 
-        <p className="text-lg text-muted-foreground">
-          Diseñamos sitios modernos, rápidos y optimizados para Google.
-          Pensados para generar consultas y mejorar la presencia online
-          de tu negocio.
-        </p>
-      </div>
-
-      {/* Paquetes */}
-      <div className="grid md:grid-cols-3 gap-6">
-
-        <div className="p-6 border border-border rounded-xl bg-card">
-          <h3 className="text-xl font-bold mb-2">
-            Landing Page
-          </h3>
-
-          <p className="text-muted-foreground mb-4">
-            Ideal para promocionar un servicio o producto.
-          </p>
-
-          <p className="text-3xl font-bold mb-6">
-            $250.000
-          </p>
-
-          <Link
-            href="/cotizador?servicio=web"
-            className="block text-center px-5 py-3 rounded-xl bg-primary text-primary-foreground font-semibold"
-          >
-            Cotizar proyecto
-          </Link>
-        </div>
+    <p className="text-lg text-muted-foreground">
+      Creamos sitios modernos, rápidos y optimizados para Google.
+      Diseñados para que tu negocio genere más consultas y tenga
+      una presencia online profesional.
+    </p>
+  </div>
 
 
-        <div className="p-6 border border-border rounded-xl bg-card">
-          <h3 className="text-xl font-bold mb-2">
-            Sitio institucional
-          </h3>
+  {/* Beneficios */}
+  <div className="grid md:grid-cols-3 gap-8 mb-20">
 
-          <p className="text-muted-foreground mb-4">
-            Para empresas que necesitan presencia online profesional.
-          </p>
+    <div>
+      <h3 className="font-semibold text-lg mb-2">
+        Diseño moderno
+      </h3>
+      <p className="text-muted-foreground">
+        Sitios visualmente atractivos que transmiten profesionalismo
+        y generan confianza en tus clientes.
+      </p>
+    </div>
 
-          <p className="text-3xl font-bold mb-6">
-            $350.000
-          </p>
+    <div>
+      <h3 className="font-semibold text-lg mb-2">
+        Optimización para Google
+      </h3>
+      <p className="text-muted-foreground">
+        Estructura pensada para posicionar mejor en buscadores
+        y facilitar que te encuentren online.
+      </p>
+    </div>
 
-          <Link
-            href="/cotizador?servicio=web"
-            className="block text-center px-5 py-3 rounded-xl bg-primary text-primary-foreground font-semibold"
-          >
-            Cotizar proyecto
-          </Link>
-        </div>
+    <div>
+      <h3 className="font-semibold text-lg mb-2">
+        Adaptado a celulares
+      </h3>
+      <p className="text-muted-foreground">
+        Tu página se verá perfecta en teléfonos, tablets
+        y computadoras.
+      </p>
+    </div>
+
+  </div>
 
 
-        <div className="p-6 border border-border rounded-xl bg-card">
-          <h3 className="text-xl font-bold mb-2">
-            Tienda Online
-          </h3>
+  {/* CTA */}
+  <div className="bg-card border border-border rounded-2xl p-10 text-center">
 
-          <p className="text-muted-foreground mb-4">
-            Venta de productos con pagos online y gestión de pedidos.
-          </p>
+    <h2 className="text-2xl font-bold mb-4">
+      ¿Querés un presupuesto para tu sitio web?
+    </h2>
 
-          <p className="text-3xl font-bold mb-6">
-            Desde $500.000
-          </p>
+    <p className="text-muted-foreground mb-6 max-w-xl mx-auto">
+      Responde algunas preguntas y te responderemos con una propuesta personalizada.
+    </p>
 
-          <Link
-            href="/cotizador?servicio=web"
-            className="block text-center px-5 py-3 rounded-xl bg-primary text-primary-foreground font-semibold"
-          >
-            Cotizar proyecto
-          </Link>
-        </div>
+    <Link
+      href="/cotizador?servicio=web"
+      className="inline-block px-6 py-3 rounded-xl bg-primary text-primary-foreground font-semibold"
+    >
+      Cotizar proyecto
+    </Link>
 
-      </div>
+  </div>
 
-    </section>
+</section>
+    </>
+   
   )
 }

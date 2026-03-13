@@ -8,7 +8,8 @@ const services = [
     title: "Sitios Web",
     description:
       "Diseñamos páginas web modernas, rápidas y optimizadas para Google. Ideales para inmobiliarias, hoteles y pymes que quieren generar más consultas y mejorar su presencia online.",
-     href: "/cotizador?servicio=web#cotizador",
+    //  href: "/cotizador?servicio=web#cotizador",
+      href: "/webs",
     image: "/card-1b.png",
     features: [
       "Diseño moderno adaptado a celulares y tablets",

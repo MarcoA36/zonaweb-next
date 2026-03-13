@@ -9,9 +9,6 @@ export function Footer() {
           {/* Brand */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-sm">Z</span>
-              </div>
               <span className="font-bold text-xl text-white tracking-tight">
                 Zona<span className="text-primary">Web</span>
               </span>

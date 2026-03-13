@@ -11,7 +11,7 @@ export function EscalableSection() {
   ]
 
   return (
-    <section className="py-24 px-6 bg-muted/30">
+    <section className="py-24 px-6">
       <div className="max-w-5xl mx-auto text-center">
 
         <h2 className="text-3xl md:text-4xl font-bold mb-6">
@@ -34,7 +34,7 @@ export function EscalableSection() {
         </div>
 
         <a
-          href="#cotizador"
+          href="/cotizador"
           className="inline-block bg-primary text-white px-8 py-4 rounded-lg font-semibold hover:opacity-90 transition"
         >
           Cotizar mi proyecto

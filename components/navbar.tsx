@@ -45,9 +45,9 @@ export function Navbar() {
             >
             
 
-              <span className="font-semibold tracking-wide text-lg">
-                Zona<span className="text-primary">Web</span>
-              </span>
+          <span className="text-xl font-semibold tracking-tight">
+  Zona<span className="text-primary">Web</span>
+</span>
             </div>
           </Link>
 
