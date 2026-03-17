@@ -7,47 +7,6 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
 const geistMono = Geist_Mono({ subsets: ["latin"], variable: "--font-geist-mono" })
 
-// export const metadata: Metadata = {
-//   metadataBase: new URL("https://www.zonaweb.site"),
-//   title: {
-//     default: "Zona Web - Sitios web, sistemas de gestión y apps móviles",
-//     template: "%s | Zona Web",
-//   },
-//   description:
-//     "Zona Web ofrece soluciones digitales a medida para tu negocio: sitios web, sistemas de gestión y aplicaciones móviles.",
-//   robots: {
-//     index: true,
-//     follow: true,
-//   },
-//   openGraph: {
-//     title: "Zona Web - Sitios, Sistemas y Apps",
-//     description:
-//       "Creamos soluciones digitales a medida para tu negocio.",
-//     url: "https://www.zonaweb.site",
-//     siteName: "Zona Web",
-//     images: [
-//       {
-//         url: "/og-image.png",
-//         width: 1200,
-//         height: 630,
-//       },
-//     ],
-//     locale: "es_AR",
-//     type: "website",
-//   },
-//   twitter: {
-//     card: "summary_large_image",
-//     title: "Zona Web",
-//     description:
-//       "Creamos sitios web, sistemas y aplicaciones para tu negocio.",
-//     images: ["/og-image.png"],
-//   },
-//   icons: {
-//     icon: "/favicon.ico",
-//     apple: "/apple-touch-icon.png",
-//   },
-//   themeColor: "#38BDF8",
-// }
 export const metadata: Metadata = {
   metadataBase: new URL("https://zonaweb.site"), 
 
