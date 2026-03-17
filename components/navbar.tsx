@@ -18,7 +18,7 @@ export function Navbar() {
 
   const navLinks = [
     { href: "#servicios", label: "Servicios" },
-    { href: "#planes", label: "Planes" },
+    { href: "#planes", label: "Precios" },
     { href: "#nosotros", label: "Nosotros" },
   ];
 
@@ -28,7 +28,7 @@ export function Navbar() {
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         scrolled
           ? "bg-card/95 backdrop-blur-md border-b border-border shadow-sm"
-          : "bg-transparent"
+          : "bg-transparent",
       )}
     >
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -40,14 +40,12 @@ export function Navbar() {
                 "inline-flex items-center gap-2 px-3 py-1.5 rounded-full  transition-all duration-300",
                 scrolled
                   ? "border-primary/30  text-foreground"
-                  : "border-white/20  text-white"
+                  : "border-white/20  text-white",
               )}
             >
-            
-
-          <span className="text-xl font-semibold tracking-tight">
-  Zona<span className="text-primary">Web</span>
-</span>
+              <span className="text-xl font-semibold tracking-tight">
+                Zona<span className="text-primary">Web</span>
+              </span>
             </div>
           </Link>
 
@@ -72,7 +70,7 @@ export function Navbar() {
                   "text-sm font-medium transition-colors",
                   scrolled
                     ? "text-muted-foreground hover:text-foreground"
-                    : "text-white/90 hover:text-white"
+                    : "text-white/90 hover:text-white",
                 )}
               >
                 {link.label}
@@ -91,15 +89,23 @@ export function Navbar() {
           </div> */}
           <div className="hidden md:flex items-center gap-3">
             <a
-              href="https://wa.me/5492284656640"
+              // href="https://wa.me/5492284656640"
+              href="#contacto"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-4 py-2 text-sm font-semibold rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
             >
               <MessageCircle className="w-4 h-4" />
-              <span>Contactar</span>
+              <span>Whatsapp</span>
             </a>
           </div>
+          {/* <Link
+            href="#contacto"
+            className="flex items-center gap-2 px-4 py-2 text-sm font-semibold rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
+          >
+            <MessageCircle className="w-4 h-4" />
+            <span>Contactar</span>
+          </Link> */}
 
           {/* Mobile menu button */}
           <button
@@ -125,18 +131,18 @@ export function Navbar() {
                   {link.label}
                 </Link>
               ))}
-           <div className="px-4 pt-3">
-        <a
-          href="https://wa.me/5492284656640"
-          target="_blank"
-          rel="noopener noreferrer"
-          onClick={() => setIsOpen(false)}
-          className="flex items-center justify-center gap-2 w-full px-4 py-3 text-sm font-semibold rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
-        >
-          <MessageCircle className="w-4 h-4" />
-          Contactar
-        </a>
-      </div>
+              <div className="px-4 pt-3">
+                <a
+                  href="https://wa.me/5492284656640"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setIsOpen(false)}
+                  className="flex items-center justify-center gap-2 w-full px-4 py-3 text-sm font-semibold rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
+                >
+                  <MessageCircle className="w-4 h-4" />
+                  Contactar
+                </a>
+              </div>
             </div>
           </div>
         )}

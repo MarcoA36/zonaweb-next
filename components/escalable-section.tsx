@@ -1,44 +1,60 @@
 export function EscalableSection() {
   const features = [
-    "Formularios avanzados",
-    "Integración con WhatsApp",
-    "Pagos online (MercadoPago / Stripe)",
-    "Tarifadores automáticos",
-    "Panel de administración",
-    "Reservas o turnos online",
-    "Área privada para clientes",
-    "Integraciones con otros sistemas",
+    "Formularios personalizados según tu necesidad",
+    "Cobros online integrados",
+    "Cálculo automático de precios o presupuestos",
+    "Panel para gestionar información fácilmente",
+    "Reservas o turnos desde la web",
+    "Áreas privadas para clientes o usuarios",
+    "Conexión con sistemas o plataformas existentes",
+    "Chat o canales de atención directa",
+    "Reportes y estadísticas para tu negocio",
   ]
 
   return (
-    <section className="py-24 px-6">
-      <div className="max-w-5xl mx-auto text-center">
+    <section className="py-24 px-6 bg-secondary/40">
+      <div className="max-w-6xl mx-auto">
 
-        <h2 className="text-3xl md:text-4xl font-bold mb-6">
-          Tu sitio puede crecer cuando lo necesites
-        </h2>
+        {/* Header */}
+        <div className="text-center max-w-3xl mx-auto mb-16">
 
-        <p className="text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Empezá con lo esencial y agregá nuevas funciones cuando tu negocio lo requiera.
-        </p>
+          <p className="text-sm font-semibold text-primary uppercase tracking-widest mb-3">
+            Desarrollo personalizado
+          </p>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 text-left mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 leading-tight">
+            Soluciones a medida
+          </h2>
+
+          <p className="text-muted-foreground text-lg">
+            Cada negocio es diferente. Podemos desarrollar herramientas
+            específicas para automatizar procesos, mejorar la gestión
+            y ofrecer una mejor experiencia a tus clientes.
+          </p>
+
+        </div>
+
+        {/* Features */}
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-5">
+
           {features.map((feature, i) => (
             <div
               key={i}
-              className="border rounded-lg px-4 py-3 bg-background hover:shadow-sm transition"
+              className="flex items-start gap-3 border border-border rounded-xl px-5 py-4 bg-background hover:shadow-sm transition"
             >
-              {feature}
+              <span className="text-primary font-bold mt-[2px]">
+                ✓
+              </span>
+
+              <span className="text-sm text-foreground">
+                {feature}
+              </span>
+
             </div>
           ))}
+
         </div>
 
-        <a
-          href="/cotizador"
-          className="inline-block bg-primary text-white px-8 py-4 rounded-lg font-semibold hover:opacity-90 transition"
-        >
-          Cotizar mi proyecto
-        </a>
       </div>
     </section>
   )

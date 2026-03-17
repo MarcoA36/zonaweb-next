@@ -49,19 +49,27 @@ const services = [
 export function ServicesSection() {
   return (
     <section id="servicios" className="py-16 md:py-20 lg:py-28 bg-white">
-      <div className="text-center mb-16">
-        <p className="text-sm font-semibold uppercase tracking-widest text-primary mb-3">
-          Servicios
-        </p>
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground text-balance mb-4">
-          Cómo podemos ayudarte
-        </h2>
-      </div>
+        <div className="text-center mb-16">
+
+    <p className="text-sm font-semibold uppercase tracking-widest text-primary mb-3">
+      Soluciones digitales
+    </p>
+
+    <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground text-balance mb-4">
+      Como podemos ayudarte
+    </h2>
+
+    {/* <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+      Desarrollamos sitios web, sistemas y aplicaciones que ayudan a 
+      mejorar tu presencia online, automatizar procesos y generar más consultas.
+    </p> */}
+
+  </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16 md:space-y-20 lg:space-y-28">
         {services.map((service, index) => {
           const isReversed = index % 2 !== 0;
           const message = encodeURIComponent(
-            `Hola, estaba viendo la página y quisiera más información sobre ${service.title}`
+            `Hola! Quisiera más información sobre el desarrollo de ${service.title}`
           );
 
           const whatsappUrl = `https://wa.me/5492284656640?text=${message}`;
@@ -106,18 +114,18 @@ export function ServicesSection() {
                 </div>
 
                 <div className="flex flex-wrap gap-3">
-                  <Link
+                  {/* <Link
                     href={service.href}
                     className="inline-block px-6 py-3 rounded-xl bg-primary text-white font-semibold hover:bg-primary/90 transition-all shadow-md"
                   >
                     Ver precios
-                  </Link>
+                  </Link> */}
 
                   <a
                     href={whatsappUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block px-6 py-3 rounded-xl border border-slate-300 text-slate-700 font-semibold hover:bg-slate-100 transition-all"
+                    className="inline-block px-6 py-3 rounded-xl bg-primary text-white font-semibold hover:bg-primary/90 transition-all shadow-md"
                   >
                     Consultar
                   </a>

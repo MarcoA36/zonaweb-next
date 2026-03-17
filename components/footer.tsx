@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { MessageCircle, Instagram, Mail } from "lucide-react"
+import { MessageCircle, Instagram, Mail, Facebook } from "lucide-react"
 
 export function Footer() {
   return (
@@ -27,16 +27,16 @@ export function Footer() {
                 <MessageCircle className="w-4 h-4" />
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.facebook.com/profile.php?id=61584669910747"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center text-white/60 hover:text-white hover:bg-white/20 transition-colors"
-                aria-label="Instagram"
+                aria-label="Facebook"
               >
-                <Instagram className="w-4 h-4" />
+                <Facebook className="w-4 h-4" />
               </a>
               <a
-                href="mailto:hola@zonaweb.com"
+                href="mailto:marcoamaolo91@gmail.com"
                 className="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center text-white/60 hover:text-white hover:bg-white/20 transition-colors"
                 aria-label="Email"
               >
@@ -72,7 +72,7 @@ export function Footer() {
                 { href: "/cotizador?servicio=web", label: "Sitios Web" },
                 { href: "/cotizador?servicio=sistema", label: "Sistemas de Gestión" },
                 { href: "/cotizador?servicio=app", label: "Apps Móviles" },
-                { href: "/cotizador", label: "Cotizador" },
+                // { href: "/cotizador", label: "Cotizador" },
               ].map((link) => (
                 <li key={link.href}>
                   <Link href={link.href} className="text-sm text-white/60 hover:text-white transition-colors">

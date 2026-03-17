@@ -8,6 +8,8 @@ import { PlansSection } from "@/components/plans-section";
 import { SolutionsSection } from "@/components/industry-section";
 import { AboutSection } from "@/components/about-section";
 import { EscalableSection } from "@/components/escalable-section";
+import ContactSection from "@/components/contact-section";
+import { WebModelSection } from "@/components/web-model-section";
 
 export default function HomePage() {
   return (
@@ -18,10 +20,12 @@ export default function HomePage() {
         <ServicesSection />
         {/* <SolutionsSection/> */}
         <PlansSection />
+        <WebModelSection/>
         <EscalableSection/>
         <BenefitsSection />
         {/* <AboutSection/> */}
         <FaqSection />
+        <ContactSection/>
       </main>
       {/* <Footer /> */}
     </>

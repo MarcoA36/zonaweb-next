@@ -1,53 +1,69 @@
-import Link from "next/link"
-import { Check } from "lucide-react"
+import Link from "next/link";
+import { Check } from "lucide-react";
 
 const plans = [
   {
-    name: "Presencia Digital",
-    description: "Ideal para empezar con presencia online profesional.",
+    name: "Presencia Web",
+    description:
+      "Ideal para negocios que necesitan empezar con una web profesional.",
     price: "$80.000",
     priceSuffix: "pago único",
     features: [
-      "Diseño web responsive",
-      "Optimización SEO básica",
+      "Sitio web de hasta 5 secciones",
+      "Diseño adaptable a celular y PC",
       "Formulario de contacto",
+      "Botón de WhatsApp",
+      "SEO básico",
+      "Hosting y dominio incluido por 1 año",
     ],
-    cta: "Me interesa",
+    cta: "Solicitar",
     featured: false,
   },
+
   {
-    name: "Profesional",
-    description: "Para empresas que necesitan administrar contenido y crecer.",
+    name: "Web Autoadministrable",
+    description: "Para clientes que quieren gestionar su contenido fácilmente.",
     price: "$120.000",
     priceSuffix: "pago único",
     features: [
-      "Todo lo del Plan Presencia",
+      "Todo lo del plan Presencia",
       "Panel de administración",
-      "Integraciones personalizadas",
+      "Editar textos e imágenes",
+      "Secciones ilimitadas",
+      "Integración con redes sociales",
+      "Hosting y dominio incluido por 1 año",
     ],
-    cta: "Me interesa",
+    cta: "Solicitar",
     featured: true,
   },
+
   {
-    name: "Empresarial",
-    description: "Solución completa para empresas que buscan escalar.",
-    price: "A consultar",
-    priceSuffix: "según proyecto",
+    name: "Web Avanzada",
+    description:
+      "Solución completa para proyectos con funciones más avanzadas.",
+    price: "$150.000",
+    priceSuffix: "desde",
     features: [
-      "Sistema de gestión a medida",
-      "Aplicación móvil personalizada",
-      "Automatización de procesos",
+      "Todo lo del plan Autoadministrable",
+      "Catálogo o tienda online",
+      "Gestión de productos",
+      "Pagos online",
+      "Funciones personalizadas",
+      "Soporte técnico",
     ],
-    cta: "Me interesa",
+    cta: "Solicitar",
     featured: false,
   },
-]
+];
 
 export function PlansSection() {
+  const whatsappNumber = "5492284656640";
   return (
-    <section id="planes" className="py-20 md:py-24 px-4 sm:px-6 lg:px-8 bg-secondary/40">
+    <section
+      id="planes"
+      className="py-20 md:py-24 px-4 sm:px-6 lg:px-8 bg-secondary/40"
+    >
       <div className="max-w-7xl mx-auto">
-
         {/* Header */}
         <div className="text-center mb-16">
           <p className="text-sm font-semibold uppercase tracking-widest text-primary mb-3">
@@ -59,13 +75,20 @@ export function PlansSection() {
           </h2>
 
           <p className="text-muted-foreground text-lg max-w-xl mx-auto">
-            Soluciones adaptadas a cada etapa de crecimiento. Desde una presencia profesional hasta sistemas completos de gestión.
+            Soluciones adaptadas a cada etapa de crecimiento. Desde una
+            presencia profesional hasta sistemas completos de gestión.
           </p>
+          {/* <h3 className="text-foreground text-2xl max-w-xl mx-auto mt-6 bg-primary/10 px-4 py-3 rounded-lg">
+            Todos los planes incluyen{" "}
+            <span className="text-primary font-bold">
+              hosting y dominio por 12 meses
+            </span>{" "}
+            para que tu web esté online desde el primer día.
+          </h3> */}
         </div>
 
         {/* Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
-
           {plans.map((plan) => (
             <div
               key={plan.name}
@@ -75,7 +98,6 @@ export function PlansSection() {
                   : "bg-card border border-border"
               }`}
             >
-
               {/* Badge */}
               {plan.featured && (
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2">
@@ -140,7 +162,9 @@ export function PlansSection() {
 
                     <span
                       className={`text-base sm:text-sm ${
-                        plan.featured ? "text-white/80" : "text-muted-foreground"
+                        plan.featured
+                          ? "text-white/80"
+                          : "text-muted-foreground"
                       }`}
                     >
                       {feature}
@@ -150,7 +174,7 @@ export function PlansSection() {
               </ul>
 
               {/* CTA */}
-              <Link
+              {/* <Link
                 href="/cotizador"
                 className={`block text-center px-5 py-3 rounded-xl font-semibold text-base sm:text-sm transition-all ${
                   plan.featured
@@ -159,11 +183,25 @@ export function PlansSection() {
                 }`}
               >
                 {plan.cta}
-              </Link>
+              </Link> */}
+              <a
+                href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+                  `Hola, me interesaría contratar el servicio ${plan.name}.`,
+                )}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`block text-center px-5 py-3 rounded-xl font-semibold text-base sm:text-sm transition-all ${
+                  plan.featured
+                    ? "bg-primary text-primary-foreground hover:bg-primary/90 shadow-md"
+                    : "bg-secondary text-foreground hover:bg-secondary/80 border border-border"
+                }`}
+              >
+                {plan.cta}
+              </a>
             </div>
           ))}
         </div>
       </div>
     </section>
-  )
+  );
 }

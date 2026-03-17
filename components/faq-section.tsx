@@ -25,11 +25,6 @@ const faqs = [
       "Sí. Todos los sitios que desarrollamos son responsive, lo que significa que se adaptan automáticamente a celulares, tablets y computadoras.",
   },
   {
-    question: "¿Mi sitio va a aparecer en Google?",
-    answer:
-      "Sí. El sitio se entrega optimizado para que los buscadores puedan indexarlo correctamente. Además, si lo necesitás, podemos trabajar estrategias de posicionamiento SEO.",
-  },
-  {
     question: "¿Ofrecen mantenimiento del sitio?",
     answer:
       "Sí. Ofrecemos planes de mantenimiento que incluyen actualizaciones, mejoras, soporte técnico y monitoreo para que tu sitio funcione correctamente todo el tiempo.",
