@@ -1,4 +1,4 @@
-import { TrendingUp, Eye, Layers } from "lucide-react"
+import { TrendingUp, Eye, Layers } from "lucide-react";
 
 const benefits = [
   {
@@ -19,7 +19,7 @@ const benefits = [
     description:
       "Creamos soluciones preparadas para crecer con tu empresa. Agregá funciones, integraciones o nuevos módulos sin empezar de cero.",
   },
-]
+];
 
 export function BenefitsSection() {
   return (
@@ -35,10 +35,11 @@ export function BenefitsSection() {
               Resultados reales para tu negocio
             </h2>
             <p className="text-white/60 text-lg leading-relaxed mb-8">
-              No solo construimos sitios web. Construimos herramientas digitales que generan resultados medibles para tu empresa.
+              No solo construimos sitios web. Construimos herramientas digitales
+              que generan resultados medibles para tu empresa.
             </p>
             <a
-              href="https://wa.me/5492284656640?text=Hola%2C%20quiero%20hablar%20de%20mi%20proyecto"
+              href="#contacto"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-primary text-primary-foreground font-semibold hover:bg-primary/90 transition-colors"
@@ -50,7 +51,7 @@ export function BenefitsSection() {
           {/* Right: cards */}
           <div className="flex flex-col gap-4">
             {benefits.map((benefit, i) => {
-              const Icon = benefit.icon
+              const Icon = benefit.icon;
               return (
                 <div
                   key={benefit.title}
@@ -60,15 +61,19 @@ export function BenefitsSection() {
                     <Icon className="w-5 h-5 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-white mb-1">{benefit.title}</h3>
-                    <p className="text-sm text-white/60 leading-relaxed">{benefit.description}</p>
+                    <h3 className="font-semibold text-white mb-1">
+                      {benefit.title}
+                    </h3>
+                    <p className="text-sm text-white/60 leading-relaxed">
+                      {benefit.description}
+                    </p>
                   </div>
                 </div>
-              )
+              );
             })}
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
