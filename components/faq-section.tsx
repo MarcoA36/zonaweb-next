@@ -9,11 +9,11 @@ const faqs = [
     answer:
       "El desarrollo incluye diseño personalizado, adaptación para celulares, optimización básica para Google, configuración inicial y publicación online. Dependiendo del plan también puede incluir formulario de contacto, integración con WhatsApp y panel de administración.",
   },
-  {
-    question: "¿Tengo que pagar hosting y dominio?",
-    answer:
-      "Sí. El dominio es el nombre de tu sitio (por ejemplo: tunegocio.com) y el hosting es el servicio donde se aloja la web para que esté disponible en internet. Podemos ayudarte a configurarlo o gestionarlo por vos.",
-  },
+ {
+  question: "¿Tengo que pagar hosting y dominio?",
+  answer:
+    "No tenés que preocuparte por nada técnico. Nuestros planes incluyen el dominio y el hosting, por lo que nos encargamos de que tu sitio esté siempre online, seguro y funcionando correctamente. Ofrecemos planes mensuales o anuales que incluyen soporte, mantenimiento y acompañamiento continuo para que vos solo te enfoques en tu negocio.",
+},
   {
     question: "¿Puedo pedir cambios después de que el sitio esté terminado?",
     answer:

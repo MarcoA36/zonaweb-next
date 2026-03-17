@@ -186,7 +186,7 @@ export function PlansSection() {
               </Link> */}
               <a
                 href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
-                  `Hola, me interesaría contratar el servicio ${plan.name}.`,
+                  `Hola, tengo interes en contratar el servicio ${plan.name}. Podrian darme más información?`,
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"

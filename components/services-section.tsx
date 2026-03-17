@@ -69,7 +69,7 @@ export function ServicesSection() {
         {services.map((service, index) => {
           const isReversed = index % 2 !== 0;
           const message = encodeURIComponent(
-            `Hola! Quisiera más información sobre el desarrollo de ${service.title}`
+            `Hola! Quisiera más información sobre sus servicios`
           );
 
           const whatsappUrl = `https://wa.me/5492284656640?text=${message}`;

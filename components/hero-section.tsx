@@ -26,8 +26,8 @@ export function HeroSection() {
 
         {/* Heading */}
         <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-white leading-tight text-balance mb-6">
-          Soluciones digitales que{" "}
-          <span className="text-primary">marcan la diferencia</span>
+          Soluciones digitales{" "}
+          <span className="text-primary">para negocios</span>
         </h1>
 
         {/* Subheading */}
