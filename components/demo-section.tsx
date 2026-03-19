@@ -419,6 +419,8 @@
 //     </section>
 //   )
 // }
+
+
 "use client";
 
 import Image from "next/image";
@@ -446,6 +448,21 @@ const demos = [
     demo: "https://hotel-demo-rho.vercel.app/",
     features: [
       "Listado de habitaciones con fotos",
+      "Detalle de servicios y comodidades",
+      "Galería visual atractiva",
+      "Botón de reserva o consulta directa",
+      "Diseño optimizado para celulares",
+    ],
+  },
+
+    {
+    title: "Restaurante - Casas de Comida",
+    description:
+      "Atraé más reservas mostrando habitaciones y servicios con una experiencia clara y profesional.",
+    image: "/demo_resto.png",
+    demo: "https://resto-demo-nine.vercel.app/",
+    features: [
+      "Menu digital",
       "Detalle de servicios y comodidades",
       "Galería visual atractiva",
       "Botón de reserva o consulta directa",
