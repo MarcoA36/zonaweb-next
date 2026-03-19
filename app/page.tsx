@@ -7,6 +7,7 @@ import { PlansSection } from "@/components/plans-section";
 import { EscalableSection } from "@/components/escalable-section";
 import ContactSection from "@/components/contact-section";
 import { WebModelSection } from "@/components/web-model-section";
+import { DemosSection } from "@/components/demo-section";
 
 export default function HomePage() {
   return (
@@ -17,12 +18,13 @@ export default function HomePage() {
         <ServicesSection />
         {/* <SolutionsSection/> */}
         <PlansSection />
-        <WebModelSection/>
-        <EscalableSection/>
+        <WebModelSection />
+        <DemosSection />
+        <EscalableSection />
         <BenefitsSection />
         {/* <AboutSection/> */}
         <FaqSection />
-        <ContactSection/>
+        <ContactSection />
       </main>
       {/* <Footer /> */}
     </>
