@@ -428,7 +428,7 @@ const demos = [
     title: "Inmobiliarias",
     description:
       "Mostrá tus propiedades con una plataforma moderna que convierte visitas en consultas reales.",
-    image: "/demo_inmo-hotel.png",
+    image: "/demo_inmo.png",
     demo: "https://inmobiliaria-demo-six.vercel.app/",
     features: [
       "Listado de propiedades con fotos y precios",
@@ -442,8 +442,8 @@ const demos = [
     title: "Hoteles y alojamientos",
     description:
       "Atraé más reservas mostrando habitaciones y servicios con una experiencia clara y profesional.",
-    image: "/demo_hotel_corregir.png",
-    demo: "/demo-hotel",
+    image: "/demo_hotel.png",
+    demo: "https://hotel-demo-rho.vercel.app/",
     features: [
       "Listado de habitaciones con fotos",
       "Detalle de servicios y comodidades",
@@ -488,11 +488,11 @@ export function DemosSection() {
                     className="w-full h-auto transition duration-500 group-hover:scale-105"
                   />
 
-                  <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                  {/* <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
                     <span className="bg-white text-black px-6 py-3 rounded-xl font-semibold">
                       Ver demo
                     </span>
-                  </div>
+                  </div> */}
                 </div>
               </div>
 
