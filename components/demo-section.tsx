@@ -469,6 +469,21 @@ const demos = [
       "Diseño optimizado para celulares",
     ],
   },
+
+   {
+    title: "Agencia de turismo",
+    description:
+      "Atraé más reservas mostrando habitaciones y servicios con una experiencia clara y profesional.",
+    image: "/demo_turismo.png",
+    demo: "https://turismo-demo-eta.vercel.app/",
+    features: [
+      "Administra ofertas y viajes",
+      "Detalle de servicios y comodidades",
+      "Galería visual atractiva",
+      "Botón de reserva o consulta directa",
+      "Diseño optimizado para celulares",
+    ],
+  },
 ];
 
 export function DemosSection() {
