@@ -17,8 +17,8 @@ export function Navbar() {
   }, []);
 
   const navLinks = [
+    { href: "#", label: "Inicio" },
     { href: "#servicios", label: "Servicios" },
-    { href: "#planes", label: "Precios" },
     { href: "#nosotros", label: "Nosotros" },
   ];
 

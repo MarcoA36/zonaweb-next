@@ -8,6 +8,8 @@ import { EscalableSection } from "@/components/escalable-section";
 import ContactSection from "@/components/contact-section";
 import { WebModelSection } from "@/components/web-model-section";
 import { DemosSection } from "@/components/demo-section";
+import { CategoriesSection } from "@/components/categories-section";
+
 
 export default function HomePage() {
   return (
@@ -15,11 +17,12 @@ export default function HomePage() {
       <Navbar />
       <main>
         <HeroSection />
-        <ServicesSection />
+        {/* <ServicesSection /> */}
         {/* <SolutionsSection/> */}
-        <PlansSection />
-        <WebModelSection />
-        <DemosSection />
+        {/* <PlansSection /> */}
+        <CategoriesSection/>
+        {/* <WebModelSection /> */}
+        {/* <DemosSection /> */}
         <EscalableSection />
         <BenefitsSection />
         {/* <AboutSection/> */}

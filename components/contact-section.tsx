@@ -6,7 +6,8 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Send } from "lucide-react";
-
+import { MdLocationOn, MdPhone, MdEmail } from "react-icons/md";
+import { FaWhatsapp, FaInstagram, FaFacebook, FaLinkedin } from "react-icons/fa";
 interface ContactSectionProps {
   title?: string;
   subtitle?: string;
@@ -94,7 +95,7 @@ export default function ContactSection({
             {title}
           </h3>
 
-          <p className="text-white/80 text-lg">{subtitle}</p>
+          <p className="text-white/80 text-lg"> Estamos aquí para ayudarte. Puedes contactarnos de manera rápida y sencilla usando cualquiera de los canales a continuación.</p>
         </div>
 
         <div className="max-w-xl mx-auto">
@@ -175,6 +176,37 @@ export default function ContactSection({
                 </>
               )}
             </Button>
+            <div className="flex items-center justify-center gap-6 mt-6">
+  <a
+    href="https://wa.me/5492284656640"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-green-500 hover:text-green-400 text-2xl transition-colors"
+    aria-label="WhatsApp"
+  >
+    <FaWhatsapp />
+  </a>
+   <a
+    href="https://www.facebook.com/profile.php?id=61584669910747"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-blue-600 hover:text-blue-500 text-2xl transition-colors"
+    aria-label="Facebook"
+  >
+    <FaFacebook />
+  </a>
+
+  <a
+    href="marcoamaolo91@gmail.com"
+    className="text-blue-400 hover:text-blue-300 text-2xl transition-colors"
+    aria-label="Email"
+  >
+    <MdEmail />
+  </a>
+ 
+
+ 
+</div>
 
             {submitMessage && (
               <p

@@ -1,6 +1,6 @@
 export function EscalableSection() {
   const features = [
-    "Formularios personalizados según tu necesidad",
+    "Formularios personalizados",
     "Cobros online integrados",
     "Cálculo automático de precios o presupuestos",
     "Panel para gestionar información fácilmente",
