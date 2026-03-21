@@ -155,6 +155,7 @@ export default function ContactSection({
                   value={formData.mensaje}
                   onChange={handleChange}
                   rows={6}
+                  style={{minHeight:"150px"}}
                   required
                 />
               </div>

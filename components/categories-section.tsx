@@ -8,7 +8,7 @@ const categories = [
     title: "Servicios profesionales",
     description:
       "Sitios pensados para mostrar tu trabajo, generar confianza y recibir consultas de forma simple.",
-    href: "/demos/servicios",
+    href: "/servicios-profesionales",
     image: "/category-pro-corregir.png",
     features: [
       "Diseño claro y profesional",
@@ -69,7 +69,7 @@ export function CategoriesSection() {
         </p>
 
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-          Soluciones para cada tipo de negocio
+          Sitios web para cada tipo de negocio
         </h2>
 
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -130,7 +130,7 @@ export function CategoriesSection() {
                     href={category.href}
                     className="inline-block px-6 py-3 rounded-xl bg-primary text-white font-semibold hover:bg-primary/90 transition-all shadow-md"
                   >
-                    Ver ejemplos
+                    Ver más
                   </Link> */}
                 </div>
               </div>
