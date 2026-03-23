@@ -15,7 +15,7 @@ const demos = [
   },
   {
     title: "Restaurante",
-    description: "Carta online y pedidos por WhatsApp.",
+    description: "Mostra tu carta online y toma pedidos por WhatsApp.",
     href: "https://resto-demo-nine.vercel.app/",
     image: "/demo_resto.png",
   }
@@ -28,13 +28,13 @@ export default function DemoSection() {
 
         {/* HEADER */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl text-white font-bold mb-4">
-         Mirá cómo podría verse tu web
-          </h2>
+ <h2 className="text-4xl md:text-5xl text-white font-bold mb-4">
+  Tu negocio listo para recibir consultas
+</h2>
 
-          <p className="text-white/80 max-w-xl mx-auto">
-            Esto son solo algunos ejemplos de diseños, con las secciones básicas que requiere cada negocio.
-          </p>
+<p className="text-white/80 max-w-xl mx-auto">
+  Mostrá tus productos o servicios de forma clara y permití que te contacten en segundos, sin complicaciones.
+</p>
         </div>
 
         {/* GRID */}
