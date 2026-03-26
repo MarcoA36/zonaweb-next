@@ -68,7 +68,7 @@ export function CategoriesSection() {
           Servicios
         </p>
 
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4 px-2">
           Sitios web para cada tipo de negocio
         </h2>
 

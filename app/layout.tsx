@@ -56,7 +56,7 @@ export const metadata: Metadata = {
       "Creamos sitios web, sistemas a medida y apps móviles para negocios que buscan crecer.",
     images: [
       {
-        url: "https://www.zonaweb.site/og-image.png",
+        url: "og-image.png",
         width: 1200,
         height: 630,
         alt: "Agencia de Desarrollo Web",
