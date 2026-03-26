@@ -95,7 +95,7 @@ export default function ContactSection({
             {title}
           </h3>
 
-          <p className="text-white/80 text-lg"> Estamos aquí para ayudarte. Puedes contactarnos de manera rápida y sencilla usando cualquiera de los canales a continuación.</p>
+          <p className="text-white/80 text-lg"> Dejanos un mensaje con tu consulta y nos pondremos en contacto a la brevedad.</p>
         </div>
 
         <div className="max-w-xl mx-auto">
