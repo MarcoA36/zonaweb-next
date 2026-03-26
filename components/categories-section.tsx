@@ -68,13 +68,13 @@ export function CategoriesSection() {
           Servicios
         </p>
 
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4 px-2">
-          Sitios web para cada tipo de negocio
-        </h2>
+      <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+  Webs simples, claras y efectivas
+</h2>
 
-        <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-          Explorá ejemplos reales organizados según lo que necesitás para tu negocio.
-        </p>
+<p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+  Todo lo que tu negocio necesita para estar online y captar clientes.
+</p>
       </div>
 
       {/* Sections */}
