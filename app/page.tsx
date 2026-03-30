@@ -27,7 +27,7 @@ export default function HomePage() {
     
         <EscalableSection />
        <DemoSection/>
-        <BenefitsSection />
+        {/* <BenefitsSection /> */}
          
         {/* <AboutSection/> */}
         <FaqSection />
