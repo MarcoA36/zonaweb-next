@@ -9,7 +9,7 @@ const categories = [
     description:
       "Sitios pensados para mostrar tu trabajo, generar confianza y recibir consultas de forma simple.",
     href: "/servicios-profesionales",
-    image: "/category-pro-corregir.png",
+    image: "/category-pro-corregir.webp",
     features: [
       "Diseño claro y profesional",
       "Enfoque en generar consultas",
@@ -22,7 +22,7 @@ const categories = [
     description:
       "Plataformas dinámicas para administrar propiedades, reservas, vehículos o servicios de forma simple.",
     href: "/demos/gestion",
-    image: "/demo_inmo-hotel.png",
+    image: "/demo_inmo-hotel.webp",
     features: [
       "Publicación y edición de contenido",
       "Gestión de listados dinámicos",
@@ -35,7 +35,7 @@ const categories = [
     description:
       "Soluciones para vender productos con catálogo, carrito y medios de pago integrados.",
     href: "/demos/tiendas",
-    image: "/category-tienda.png",
+    image: "/category-tienda.webp",
     features: [
       "Carga de productos ilimitados",
       "Carrito de compras",
@@ -48,7 +48,7 @@ const categories = [
     description:
       "Páginas enfocadas en convertir visitas en clientes; para campañas, eventos o lanzamientos.",
     href: "/demos/landing",
-    image: "/category-landing.png",
+    image: "/category-landing.webp",
     features: [
       "Diseño enfocado en conversión",
       "Secciones claras y directas",

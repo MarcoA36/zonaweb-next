@@ -5,19 +5,19 @@ const demos = [
     title: "Inmobiliaria",
     description: "Propiedades con fotos, precios y contacto directo.",
     href: "https://inmobiliaria-demo-six.vercel.app/",
-    image: "/demo_inmo.png",
+    image: "/demo_inmo.webp",
   },
   {
     title: "Hotel",
     description: "Mostrá habitaciones y recibí reservas o consultas.",
     href: "https://hotel-demo-rho.vercel.app/",
-    image: "/demo_hotel.png",
+    image: "/demo_hotel.webp",
   },
   {
     title: "Restaurante",
     description: "Mostra tu carta online y toma pedidos por WhatsApp.",
     href: "https://resto-demo-nine.vercel.app/",
-    image: "/demo_resto.png",
+    image: "/demo_resto.webp",
   }
 ];
 
