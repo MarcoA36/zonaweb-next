@@ -10,6 +10,7 @@ import { WebModelSection } from "@/components/web-model-section";
 import { DemosSection } from "@/components/demo-section";
 import { CategoriesSection } from "@/components/categories-section";
 import DemoSection from "@/components/demos-section";
+import { CatalogSection } from "@/components/demo-catalogo";
 
 
 export default function HomePage() {
@@ -26,9 +27,10 @@ export default function HomePage() {
         {/* <DemosSection /> */}
     
         <EscalableSection />
+       <CatalogSection/>
        <DemoSection/>
         {/* <BenefitsSection /> */}
-         
+        
         {/* <AboutSection/> */}
         <FaqSection />
         <ContactSection />
