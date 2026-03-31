@@ -4,7 +4,8 @@ const demos = [
   {
     title: "Inmobiliaria",
     description: "Propiedades con fotos, precios y contacto directo.",
-    href: "https://inmobiliaria-demo-six.vercel.app/",
+    // href: "https://inmobiliaria-demo-six.vercel.app/",
+    href: "https://inmobiliaria-demo-2.vercel.app/",
     image: "/demo_inmo.webp",
   },
   {
