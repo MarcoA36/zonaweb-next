@@ -29,7 +29,9 @@ export const metadata: Metadata = {
   ],
 
   authors: [{ name: "Tu Nombre" }],
-
+  verification: {
+    google: "PCkUYReJSTy2toO-rxOEPA1Ox1k66eW8LrNMHfVQntA",
+  },
   robots: {
     index: true,
     follow: true,

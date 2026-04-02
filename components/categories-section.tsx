@@ -89,7 +89,7 @@ export function CategoriesSection() {
             >
               {/* Image */}
               <div className={`relative ${isReversed ? "lg:order-2" : ""}`}>
-                <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 to-transparent rounded-3xl blur-2xl scale-110" />
+                {/* <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 to-transparent rounded-3xl blur-2xl scale-110" /> */}
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-200 bg-white">
                   <Image
                     src={category.image}

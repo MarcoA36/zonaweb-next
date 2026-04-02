@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function CatalogSection() {
   return (
-    <section className="py-28 px-6 bg-foreground">
+    <section className="py-28 px-6 bg-foreground" id="negocios">
       <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-20 items-center">
 
         {/* IZQUIERDA - IMAGEN LIMPIA */}
