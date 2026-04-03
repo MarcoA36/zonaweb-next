@@ -16,7 +16,7 @@ import { CatalogSection } from "@/components/demo-catalogo";
 export default function HomePage() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <main>
         <HeroSection />
         {/* <ServicesSection /> */}

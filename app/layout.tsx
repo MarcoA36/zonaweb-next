@@ -8,7 +8,7 @@
 // const geistMono = Geist_Mono({ subsets: ["latin"], variable: "--font-geist-mono" })
 
 // export const metadata: Metadata = {
-//   metadataBase: new URL("https://zonaweb.site"), 
+//   metadataBase: new URL("https://zonaweb.site"),
 
 //   title: {
 //     default: "Desarrollo Web | Soluciones Digitales Profesionales",
@@ -82,8 +82,7 @@
 //       { url: "/apple-touch-icon.png", sizes: "180x180" }
 //     ],
 //   },
-  
-  
+
 // };
 
 // export default function RootLayout({
@@ -102,19 +101,20 @@
 //   )
 // }
 
+import type { Metadata } from "next";
+import { Inter, Geist_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
+import { Footer } from "@/components/footer";
+import "./globals.css";
+import ContactSection from "@/components/contact-section";
+import { Navbar } from "@/components/navbar";
+import { HeroSection } from "@/components/hero-section";
 
-
-
-
-
-import type { Metadata } from "next"
-import { Inter, Geist_Mono } from "next/font/google"
-import { Analytics } from "@vercel/analytics/next"
-import { Footer } from "@/components/footer"
-import "./globals.css"
-
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
-const geistMono = Geist_Mono({ subsets: ["latin"], variable: "--font-geist-mono" })
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const geistMono = Geist_Mono({
+  subsets: ["latin"],
+  variable: "--font-geist-mono",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://zonaweb.site"),
@@ -186,20 +186,23 @@ export const metadata: Metadata = {
     ],
     apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
   },
-}
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="es">
-      <body className={`${inter.variable} ${geistMono.variable} font-sans antialiased`}>
+      <body
+        className={`${inter.variable} ${geistMono.variable} font-sans antialiased`}
+      >
+        <Navbar />
         {children}
         <Footer />
         <Analytics />
       </body>
     </html>
-  )
+  );
 }

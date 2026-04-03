@@ -18,10 +18,10 @@ const categories = [
     ],
   },
   {
-    title: "Negocios con gestión",
+    title: "Negocios con Catálogo",
     description:
       "Plataformas dinámicas para administrar propiedades, reservas, vehículos o servicios de forma simple.",
-    href: "/demos/gestion",
+    href: "/autoadministrable",
     image: "/demo_inmo-hotel.webp",
     features: [
       "Publicación y edición de contenido",
@@ -31,10 +31,23 @@ const categories = [
     ],
   },
   {
+  title: "Blog / Portal de Contenidos",
+  description:
+    "Sitios para publicar artículos, noticias o contenido temático de forma periódica y organizada.",
+  href: "/portal",
+  image: "/category-portal.webp",
+  features: [
+    "Publicación de artículos con imágenes y videos",
+    "Categorías, etiquetas y buscador interno",
+    "Gestión de contenido fácil desde el panel administrativo",
+    "Ideal para blogs temáticos, portales de noticias o tutoriales",
+  ],
+},
+  {
     title: "Tiendas online",
     description:
       "Soluciones para vender productos con catálogo, carrito y medios de pago integrados.",
-    href: "/demos/tiendas",
+    href: "/ecommerce",
     image: "/category-tienda.webp",
     features: [
       "Carga de productos ilimitados",
@@ -47,7 +60,7 @@ const categories = [
     title: "Landing & promociones",
     description:
       "Páginas enfocadas en convertir visitas en clientes; para campañas, eventos o lanzamientos.",
-    href: "/demos/landing",
+    href: "/landing",
     image: "/category-landing.webp",
     features: [
       "Diseño enfocado en conversión",
@@ -126,12 +139,12 @@ export function CategoriesSection() {
                   >
                     Consultar
                   </Link>
-                  {/* <Link
+                  <Link
                     href={category.href}
-                    className="inline-block px-6 py-3 rounded-xl bg-primary text-white font-semibold hover:bg-primary/90 transition-all shadow-md"
+                    className="inline-block px-6 py-3 rounded-xl bg-secondary text-foreground font-semibold hover:bg-primary/90 transition-all shadow-md"
                   >
                     Ver más
-                  </Link> */}
+                  </Link>
                 </div>
               </div>
             </div>
