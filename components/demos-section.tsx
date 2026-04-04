@@ -6,19 +6,19 @@ import Link from "next/link";
 import Image from "next/image";
 const demos = [
   {
-    title: "Inmobiliaria",
+    title: "Portal para Inmobiliarias",
     description: "Propiedades con fotos, precios y contacto directo.",
     href: "https://inmobiliaria-demo-2.vercel.app/",
     image: "/demo_inmo.webp",
   },
   {
-    title: "Hotel",
+    title: "Web para Hoteles",
     description: "Mostrá habitaciones y recibí reservas o consultas.",
     href: "https://hotel-demo-rho.vercel.app/",
     image: "/demo_hotel.webp",
   },
   {
-    title: "Restaurante",
+    title: "Web para Restaurantes",
     description: "Mostra tu carta online y toma pedidos por WhatsApp.",
     href: "https://resto-demo-nine.vercel.app/",
     image: "/demo_resto.webp",
@@ -164,7 +164,7 @@ export default function DemoSection() {
 
                         {/* Desktop: difumina el paso imagen → textos */}
                         <div
-                          className="pointer-events-none absolute inset-y-0 right-0 z-10 hidden w-20 bg-gradient-to-l from-white via-white/75 to-transparent md:block lg:w-28"
+                          className="pointer-events-none absolute inset-y-0 right-0 z-10 hidden w-20 bg-gradient-to-l from-white via-white/75 to-transparent md:block lg:w-8"
                           aria-hidden
                         />
 

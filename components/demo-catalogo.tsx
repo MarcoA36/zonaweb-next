@@ -2,24 +2,27 @@ import Image from "next/image";
 
 export function CatalogSection() {
   return (
-    <section className="py-16 sm:py-20 md:py-24 lg:py-28 px-4 sm:px-6 bg-foreground" id="negocios">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 md:items-start gap-8 sm:gap-10 md:gap-10 lg:gap-14 xl:gap-16">
+    <section
+      className="py-10 md:py-20 md:py-24 lg:py-28 px-4 sm:px-6 bg-foreground"
+      id="negocios"
+    >
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-8 ">
         {/* IMAGEN — columna izquierda en md+ */}
-        <div className="flex min-w-0 justify-center md:justify-end md:pr-2 lg:pr-4">
-          <div className="relative aspect-[19/38] w-full max-w-[240px] sm:max-w-[280px] md:max-w-[300px] lg:max-w-[340px]">
+        <div className="flex justify-center md:justify-start md:pr-4 lg:pr-8">
+          <div className="relative aspect-[19/38] w-[180px] sm:w-[220px] md:w-[280px] lg:w-[320px]">
             <Image
               src="/catalogo-mobile.png"
               alt="Catálogo online"
               fill
               className="object-contain object-center"
-              sizes="(max-width: 767px) 72vw, (max-width: 1024px) 38vw, 360px"
+              sizes="(max-width: 640px) 50vw, (max-width: 1024px) 40vw, 280px"
               priority
             />
           </div>
         </div>
 
         {/* COPY + FEATURES + CTA — columna derecha en md+ */}
-        <div className="min-w-0 flex flex-col md:pt-1 lg:pt-2">
+        <div className="flex flex-col min-w-0 md:pt-0">
           <p className="text-primary text-sm font-semibold uppercase tracking-widest mb-3">
             Para tiendas en crecimiento
           </p>
