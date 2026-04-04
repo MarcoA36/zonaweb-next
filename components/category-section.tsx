@@ -18,15 +18,15 @@ export function CategorySection({
   reverse = false,
 }: CategorySectionProps) {
   return (
-    <section className="py-20 px-4">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+    <section className="py-16 sm:py-20 px-4 sm:px-6">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 md:gap-12 items-center">
 
         {/* Imagen */}
-        <div className={reverse ? "md:order-2" : ""}>
+        <div className={`mx-auto w-full max-w-lg md:max-w-none ${reverse ? "md:order-2" : ""}`}>
           <img
             src={image}
             alt={title}
-            className="w-full rounded-2xl shadow-lg"
+            className="w-full h-auto max-h-[min(48vh,380px)] md:max-h-none rounded-2xl shadow-lg object-contain object-center"
           />
         </div>
 

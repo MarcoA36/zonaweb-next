@@ -98,24 +98,26 @@ export function CategoriesSection() {
           return (
             <div
               key={category.title}
-              className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center"
+              className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 md:gap-10 lg:gap-16 items-center"
             >
               {/* Image */}
-              <div className={`relative ${isReversed ? "lg:order-2" : ""}`}>
-                {/* <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 to-transparent rounded-3xl blur-2xl scale-110" /> */}
+              <div
+                className={`relative mx-auto w-full max-w-lg md:max-w-none ${isReversed ? "md:order-2" : ""}`}
+              >
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-200 bg-white">
                   <Image
                     src={category.image}
                     alt={category.title}
                     width={900}
                     height={600}
-                    className="w-full h-auto transition-transform duration-500 hover:scale-[1.03]"
+                    sizes="(max-width: 767px) min(100vw, 32rem), 45vw"
+                    className="w-full h-auto max-h-[min(48vh,380px)] md:max-h-none object-contain object-center transition-transform duration-500 hover:scale-[1.02] sm:hover:scale-[1.03]"
                   />
                 </div>
               </div>
 
               {/* Content */}
-              <div className={`${isReversed ? "lg:order-1" : ""}`}>
+              <div className={`${isReversed ? "md:order-1" : ""}`}>
                 <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-5">
                   {category.title}
                 </h2>
