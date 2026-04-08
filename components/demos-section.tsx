@@ -18,10 +18,16 @@ const demos = [
     image: "/demo_hotel.webp",
   },
   {
-    title: "Web para Restaurantes",
+    title: "Web para Restaurantess",
     description: "Mostra tu carta online y toma pedidos por WhatsApp.",
     href: "https://resto-demo-nine.vercel.app/",
     image: "/demo_resto.webp",
+  },
+  {
+    title: "Agencias de viajes",
+    description: "Mostra oda la información de tus destinos.",
+    href: "https://turismo-demo-eta.vercel.app/",
+    image: "/demo_turismo.webp",
   },
 ];
 
@@ -147,19 +153,19 @@ export default function DemoSection() {
                           md:h-auto md:min-h-[420px] lg:min-h-[460px]
                           bg-gradient-to-br from-neutral-100 to-neutral-50"
                       >
-<div className="relative h-full w-full md:mx-auto md:max-w-[720px] md:px-8 md:py-10 lg:px-10">
-                         <Image
-  src={demo.image}
-  alt={demo.title}
-  fill
-  className={`object-cover md:object-contain transition-all duration-700 ease-out ${
-    isActive
-      ? "opacity-100 scale-100"
-      : "opacity-0 scale-[0.98]"
-  }`}
-  sizes="(max-width: 768px) 100vw, 45vw"
-  priority={isActive}
-/>
+                        <div className="relative h-full w-full md:mx-auto md:max-w-[720px] md:px-8 md:py-10 lg:px-10">
+                          <Image
+                            src={demo.image}
+                            alt={demo.title}
+                            fill
+                            className={`object-cover md:object-contain transition-all duration-700 ease-out ${
+                              isActive
+                                ? "opacity-100 scale-100"
+                                : "opacity-0 scale-[0.98]"
+                            }`}
+                            sizes="(max-width: 768px) 100vw, 45vw"
+                            priority={isActive}
+                          />
                         </div>
 
                         {/* Desktop: difumina el paso imagen → textos */}
