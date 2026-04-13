@@ -24,5 +24,17 @@ export default function sitemap() {
       url: "https://zonaweb.site/landing",
       lastModified: new Date(),
     },
+    {
+      url: "https://zonaweb.site/blog/hacer-pagina-web-gratis",
+      lastModified: new Date(),
+    },
+    {
+      url: "https://zonaweb.site/blog/importancia-de-tener-una-web-para-negocio",
+      lastModified: new Date(),
+    },
+    {
+      url: "https://zonaweb.site/blog/por-que-tu-negocio-necesita-web",
+      lastModified: new Date(),
+    },
   ];
 }
