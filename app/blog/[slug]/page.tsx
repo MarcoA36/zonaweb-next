@@ -109,6 +109,33 @@ export default async function BlogArticlePage({ params }: Props) {
                   </div>
                 );
 
+              case "link":
+                return (
+                  <a
+                    key={i}
+                    href={block.href}
+                    target="_blank"
+                    className="text-primary font-medium underline"
+                  >
+                    {block.content}
+                  </a>
+                );
+
+              case "example":
+                return (
+                  <div
+                    key={i}
+                    className="my-6 p-4 rounded-xl border border-blue-500/30 bg-blue-500/5"
+                  >
+                    {block.title && (
+                      <p className="font-semibold mb-2 text-blue-600">
+                        {block.title}
+                      </p>
+                    )}
+                    <p className="text-muted-foreground">{block.content}</p>
+                  </div>
+                );
+
               default:
                 return (
                   <p key={i} className="text-muted-foreground">

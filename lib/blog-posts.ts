@@ -4,6 +4,10 @@ type BlogBlock =
   | { type: "h3"; content: string }
   | { type: "img"; src: string; alt: string }
   | { type: "cta"; content: string }
+  | { type: "link"; href:string, content: string }
+   | { type: "example"; title?: string; content: string }
+  | { type: "quote"; content: string }
+  | { type: "highlight"; content: string }
 
 export type BlogPost = {
   slug: string
@@ -206,6 +210,111 @@ contenido: [
   },
 ]
   },
+
+  {
+    slug: "hacer-pagina-web-gratis",
+    title: "Cómo hacer una página web gratis para tu negocio",
+    fecha: "28 de febrero de 2026",
+    fechaIso: "2026-02-28",
+    resumen:
+      "Crear una web hoy es más fácil que nunca. Herramientas modernas permiten empezar rápido y tener presencia online sin complicaciones.",
+contenido: [
+  {
+    type: "p",
+    content:
+      "Hoy podés crear una página web sin programar usando herramientas con inteligencia artificial.",
+  },
+
+  {
+    type: "p",
+    content:
+      "Una de las más simples y potentes es v0, que genera interfaces completas a partir de texto.",
+  },
+
+  {
+    type: "link",
+    href: "https://v0.dev",
+    content: "Ir a v0",
+  },
+
+  {
+    type: "h2",
+    content: "Cómo funciona",
+  },
+
+  {
+    type: "p",
+    content:
+      "Escribís lo que necesitás en lenguaje simple y la herramienta genera una web automáticamente.",
+  },
+
+  {
+    type: "p",
+    content:
+      "Después podés ajustar textos, secciones y diseño sin necesidad de programar.",
+  },
+
+  {
+    type: "h2",
+    content: "Ejemplos de uso",
+  },
+
+  {
+    type: "example",
+    title: "Ejemplo 1",
+    content:
+      "Necesito una página para una bicicletería con portada, catálogo de bicicletas, precios y botón de WhatsApp.",
+  },
+
+  {
+    type: "example",
+    title: "Ejemplo 2",
+    content:
+      "Quiero una web para un electricista con presentación, servicios, trabajos realizados y contacto directo por WhatsApp.",
+  },
+
+  {
+    type: "h2",
+    content: "Qué podés hacer con esto",
+  },
+
+  {
+    type: "p",
+    content:
+      "Funciona muy bien para páginas simples, servicios, negocios locales o proyectos personales.",
+  },
+
+  {
+    type: "p",
+    content:
+      "Es una forma rápida de tener algo funcionando sin depender de desarrollo complejo.",
+  },
+
+  {
+    type: "h2",
+    content: "Cuando necesitás algo más",
+  },
+
+  {
+    type: "p",
+    content:
+      "En algunos casos, cuando el negocio crece o necesita algo más específico, puede ser necesario un desarrollo a medida.",
+  },
+
+  {
+    type: "p",
+    content:
+      "Ahí se pueden agregar funcionalidades más avanzadas, diseño totalmente personalizado y una estructura pensada exclusivamente para el negocio.",
+  },
+
+  {
+    type: "cta",
+    content:
+      "Si querés ayuda para crear tu web o llevarla a un nivel más profesional, podés dejarnos un mensaje.",
+  },
+]
+  },
+
 ]
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
