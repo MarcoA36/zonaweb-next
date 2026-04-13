@@ -5,16 +5,22 @@ import { blogPosts } from "@/lib/blog-posts"
 
 export const metadata: Metadata = {
   title: "Blog | ZonaWeb",
-  description:
-    "Aprendé cómo conseguir más clientes con tu web, mejorar tu presencia online y vender mejor.",
+  description: "Aprendé cómo conseguir más clientes con tu web...",
   alternates: {
     canonical: "https://zonaweb.site/blog",
   },
   openGraph: {
     title: "Blog | ZonaWeb",
-    description:
-      "Guías simples para negocios que quieren vender más con su web.",
+    description: "Guías simples para negocios...",
     url: "https://zonaweb.site/blog",
+    images: [
+      {
+        url: "https://zonaweb.site/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Blog ZonaWeb",
+      },
+    ],
   },
 }
 
