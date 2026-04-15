@@ -17,7 +17,7 @@ import { Footer } from "@/components/footer";
 export default function HomePage() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <main>
         <HeroSection />
         {/* <ServicesSection /> */}
@@ -36,7 +36,7 @@ export default function HomePage() {
         <FaqSection />
         <ContactSection />
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
