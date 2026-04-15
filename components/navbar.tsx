@@ -232,7 +232,7 @@ export function Navbar() {
           {/* CTA */}
           <div className="hidden md:flex">
             <a
-              href="https://wa.me/5492284656640"
+              href="https://wa.me/5492284374461"
               target="_blank"
               className="flex items-center gap-2 px-4 py-2 text-sm font-semibold rounded-lg bg-primary text-white hover:bg-primary/90"
             >

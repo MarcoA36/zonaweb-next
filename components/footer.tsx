@@ -18,7 +18,7 @@ export function Footer() {
             </p>
             <div className="flex items-center gap-3">
               <a
-                href="https://wa.me/5492284656640"
+                href="https://wa.me/5492284374461"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center text-white/60 hover:text-white hover:bg-white/20 transition-colors"
@@ -68,18 +68,17 @@ export function Footer() {
           <div>
             <h4 className="text-sm font-semibold text-white mb-4 uppercase tracking-widest">Servicios</h4>
             <ul className="space-y-3">
-              {[
-                { href: "/cotizador?servicio=web", label: "Sitios Web" },
-                { href: "/cotizador?servicio=sistema", label: "Sistemas de Gestión" },
-                { href: "/cotizador?servicio=app", label: "Apps Móviles" },
-                // { href: "/cotizador", label: "Cotizador" },
-              ].map((link) => (
-                <li key={link.href}>
-                  <Link href={link.href} className="text-sm text-white/60 hover:text-white transition-colors">
-                    {link.label}
-                  </Link>
+            
+                <li className="text-sm text-white/60 hover:text-white transition-colors">
+               web 
                 </li>
-              ))}
+                 <li className="text-sm text-white/60 hover:text-white transition-colors">
+                 Servicios
+                </li>
+                 <li className="text-sm text-white/60 hover:text-white transition-colors">
+                 Negocios
+                </li>
+             
             </ul>
           </div>
         </div>

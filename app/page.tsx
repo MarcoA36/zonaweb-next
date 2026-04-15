@@ -11,12 +11,13 @@ import { DemosSection } from "@/components/demo-section";
 import { CategoriesSection } from "@/components/categories-section";
 import DemoSection from "@/components/demos-section";
 import { CatalogSection } from "@/components/demo-catalogo";
+import { Footer } from "@/components/footer";
 
 
 export default function HomePage() {
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar />
       <main>
         <HeroSection />
         {/* <ServicesSection /> */}
@@ -35,7 +36,7 @@ export default function HomePage() {
         <FaqSection />
         <ContactSection />
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
